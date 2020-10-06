@@ -1,0 +1,20 @@
+//Mixing
+@import "mixin";
+
+//base style
+@import "base/reset";
+@import "base/page";
+
+// Layout Styles
+@import "layout/navbar";
+@import "layout/header";
+@import "layout/about";
+@import "layout/gallery";
+@import "layout/footer";
+
+// Components
+@import "components/logo";
+@import "components/heading";
+@import "components/button";
+@import "components/card";
+@import "components/hamburger";

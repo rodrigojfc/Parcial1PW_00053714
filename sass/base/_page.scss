@@ -1,0 +1,23 @@
+$color-dark: #262626;
+$color-black: #000;
+$color-primary: #d3ab55;
+$color-secondary: #bbb;
+$color-white: #fff;
+
+
+//Fonts
+
+:root{
+    box-sizing: inherit;
+}
+
+%fullSpace {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    box-sizing: border-box;
+    background: url(../images/background.jpg) no-repeat fixed;
+    background-size: cover;
+}
