@@ -6,17 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Icons -->
-    <link rel="icon" href="./icons/owl.png">  
+    <link rel="icon" href="./icons/owl.png">
     <meta name="twitter:card" content="summary_large_image">
     <!--Share-->
     <script type='text/javascript'
         src='https://platform-api.sharethis.com/js/sharethis.js#property=5f63fa6c3dd74500195ad4ea&product=inline-share-buttons'
         async='async'></script>
     <!--Social media-->
-        <script
-      src="https://kit.fontawesome.com/584e2cd5cb.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/584e2cd5cb.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/main.css">
     <title>Fia Links</title>
 </head>
@@ -24,50 +21,65 @@
 <body>
     <div class="wrapper">
         <div class="language">
-            <i class="language"></i>
+            <i class="fas fa-language"></i>
             <a href="spanish">ES</a>
             <a href="index.html">EN</a>
-        
+            <hr>
+
         </div>
     </div>
     <!-- Header -->
     <header class="header">
         <div class="inner">
             <a href="#" class="logo">
-                <span class="symbol">
-                    <img src="./icons/logo.jpg" alt="Fia Links">
-                </span>
+    
+                <img src="./icons/logo.jpg" alt="Fia Links">
+    
                 <span class="darkgrey">F</span>
                 <span class="yellow">I</span>
                 <span class="lightgray">A</span>
                 Links
             </a>
-            <nav>
-                <ul>
-                    <li><a href="#menu">Menu</a></li>
-                </ul>
-            </nav>
-
         </div>
-
+    
     </header>
     <!-- End of header-->
 
     <!--Menu-->
-    <nav class="menu">
-        <h2>Menu</h2>
-        <ul>
-            <li><a href="home">Home</a></li>
-            <li><a href="architecture">Architecture</a></li>
-            <li><a href="Food">Food Engineering</a></li>
-            <li><a href="Civil">Civil Engineering</a></li>
-            <li><a href="Electrical">Electrical Engineering</a></li>
-            <li><a href="Energy">Energy Engineering</a></li>
-            <li><a href="Industrial">Industrial Engineering</a></li>
-            <li><a href="Computer">Computer Systems Engineering</a></li>
-            <li><a href="Mechanical">Mechanical Engineering</a></li>
-            <li><a href="Chemical">Chemical Engineering</a></li>
-        </ul>
+    <nav class="navbar">
+        <input type="checkbox" id="checkbox" class="checkbox" hidden>
+        <div class="hamburger-menu">
+            <label for="checkbox" class="menu">
+                <div class="menu-line menu-line-1"></div>
+                <div class="menu-line menu-line-2"></div>
+                <div class="menu-line menu-line-3"></div>
+                <div class="menu-line menu-line-4"></div>
+                <div class="menu-line menu-line-5"></div>
+                <div class="menu-line menu-line-6"></div>
+                <div class="menu-line menu-line-7"></div>
+                <div class="menu-line menu-line-8"></div>
+                <div class="menu-line menu-line-9"></div>
+                <div class="menu-line menu-line-10"></div>
+            </label>
+        </div>
+        <div class="navbar-navigation">
+            <div class="navbar-navigation-right">
+                <ul class="nav-links">
+                    <li class="nav-list-item"><a href="Home" class="nav-list-link">Home</a></li>
+                    <li class="nav-list-item"><a href="Architecture" class="nav-list-link">Architecture</a></li>
+                    <li class="nav-list-item"><a href="Food" class="nav-list-link">Food Engineering</a></li>
+                    <li class="nav-list-item"><a href="Civil" class="nav-list-link">Civil Engineering</a></li>
+                    <li class="nav-list-item"><a href="Electric" class="nav-list-link">Electrical Engineering</a></li>
+                    <li class="nav-list-item"><a href="Energy" class="nav-list-link">Energy Engineering</a></li>
+                    <li class="nav-list-item"><a href="Industrial" class="nav-list-link">Industrial Engineering</a></li>
+                    <li class="nav-list-item"><a href="Computer" class="nav-list-link">Computer Systems Engineering</a>
+                    </li>
+                    <li class="nav-list-item"><a href="Mechanical" class="nav-list-link">Mechanical Engineering</a></li>
+                    <li class="nav-list-item"><a href="Chemical" class="nav-list-link">Chemical Engineering</a></li>
+                </ul>
+
+            </div>
+        </div>
     </nav>
     <div class="main">
         <div class="inner">
@@ -77,14 +89,17 @@
                     “Jose Simeon Cañas” (UCA) engineering and architecture faculty as a virtual
                     space for the exchange of knowledge of various fields on engineering and architecture.
                     This will be held on October 9th, 2020. </p>
+                    <br>
                 <p> The event is aimed at the entire university community, but with particular focus
                     on our students, teachers, and alumni of the University. Similarly, as part of the
                     university’s focus on disseminating knowledge, the event will be open to the participation
                     of people outside our university.</p>
+                    <br>
                 <p> The virtual conferences are of a technical nature with current issues of concern for the
                     country, the region, and the world, bringing together international and national speakers from
                     different fields. </p>
-                <button id="get your tickets" type="button">Get your ticket free</button>
+                    <br>
+                <button class="get-your-tickets" type="button">Get your ticket free</button>
             </header>
 
         </div>
@@ -92,85 +107,85 @@
     <header class="conferences">
         <h2>Conferences</h2>
         <hr>
-      </header>
+    </header>
     <!--Gallery-->
 
     <section class="gallery">
         <div class="cards-wrap">
             <article class="card">
-                <div class="card-overlay">
+                <div class="card-overlay-1">
                     <h1 class="card-overlay-head">Architecture</h1>
                     <a href="Architecture" class="overlay-link">Find out more</a>
                 </div>
-    
+
                 <img src="./images/Architect.jpg" alt="Architecture">
             </article>
             <article class="card">
-                <div class="card-overlay">
+                <div class="card-overlay-2">
                     <h1 class="card-overlay-head">Food Engineering</h1>
                     <a href="Food" class="overlay-link">Find out more</a>
                 </div>
-    
+
                 <img src="./images/food.jpg" alt="Food">
             </article>
             <article class="card">
-                <div class="card-overlay">
+                <div class="card-overlay-3">
                     <h1 class="card-overlay-head">Civil Engineering</h1>
                     <a href="Civil" class="overlay-link">Find out more</a>
                 </div>
-    
+
                 <img src="./images/civil.jpg" alt="Civil">
             </article>
             <article class="card">
-                <div class="card-overlay">
+                <div class="card-overlay-4">
                     <h1 class="card-overlay-head">Electrical Engineering</h1>
                     <a href="Electrical" class="overlay-link">Find out more</a>
                 </div>
-    
+
                 <img src="./images/Electrical.jpg" alt="Electrical">
             </article>
             <article class="card">
-                <div class="card-overlay">
+                <div class="card-overlay-5">
                     <h1 class="card-overlay-head">Energy Engineering</h1>
                     <a href="Energt" class="overlay-link">Find out more</a>
                 </div>
-    
+
                 <img src="./images/energy.jpg" alt="Energy">
             </article>
             <article class="card">
-                <div class="card-overlay">
+                <div class="card-overlay-6">
                     <h1 class="card-overlay-head">Industrial Engineering</h1>
                     <a href="Industrial" class="overlay-link">Find out more</a>
                 </div>
-    
+
                 <img src="./images/industrial.jpg" alt="Industrial">
             </article>
             <article class="card">
-                <div class="card-overlay">
+                <div class="card-overlay-7">
                     <h1 class="card-overlay-head">Computer Systems Engineering</h1>
                     <a href="Computer" class="overlay-link">Find out more</a>
                 </div>
-    
+
                 <img src="./images/computer.jpg" alt="Computer Systems">
             </article>
             <article class="card">
-                <div class="card-overlay">
+                <div class="card-overlay-8">
                     <h1 class="card-overlay-head">Mechanical Engineering</h1>
                     <a href="Mechanical" class="overlay-link">Find out more</a>
                 </div>
-    
+
                 <img src="./images/mechanical.jpg" alt="Mechanical">
             </article>
             <article class="card">
-                <div class="card-overlay">
+                <div class="card-overlay-9">
                     <h1 class="card-overlay-head">Chemical Engineering</h1>
                     <a href="Chemical" class="overlay-link">Find out more</a>
                 </div>
-    
+
                 <img src="./images/chemical.jpg" alt="Chemical">
             </article>
         </div>
-    
+
     </section>
 
     <!--End of Gallery-->
@@ -199,26 +214,26 @@
 
             <div class="footer-social-media">
                 <ul class="social-media">
-                  <li class="social-media-item">
-                    <a href="#" class="social-media-link">
-                      <i class="fab fa-facebook-square"></i>
-                    </a>
-                  </li>
-                  <li class="social-media-item">
-                    <a href="#" class="social-media-link">
-                      <i class="fab fa-instagram"></i>
-                    </a>
-                  </li>
-                  <li class="social-media-item">
-                    <a href="#" class="social-media-link">
-                      <i class="fab fa-twitter-square"></i>
-                    </a>
-                  </li>
-                  <li class="social-media-item">
-                    <a href="#" class="social-media-link">
-                      <i class="fab fa-youtube"></i>
-                    </a>
-                  </li>
+                    <li class="social-media-item">
+                        <a href="#" class="social-media-link">
+                            <i class="fab fa-facebook-square"></i>
+                        </a>
+                    </li>
+                    <li class="social-media-item">
+                        <a href="#" class="social-media-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li class="social-media-item">
+                        <a href="#" class="social-media-link">
+                            <i class="fab fa-twitter-square"></i>
+                        </a>
+                    </li>
+                    <li class="social-media-item">
+                        <a href="#" class="social-media-link">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </li>
                 </ul>
             </div>
             <div class="copyright">
@@ -226,7 +241,7 @@
             </div>
         </div>
     </footer>
-    
+
 
 </body>
 

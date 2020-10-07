@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,700,900");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -43,7 +44,7 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-.card img, .card .card-overlay {
+.card .card-overlay-1, .card .card-overlay-2, .card .card-overlay-3, .card .card-overlay-4, .card .card-overlay-5, .card .card-overlay-6, .card .card-overlay-7, .card .card-overlay-8, .card .card-overlay-9, .card img {
   width: 80%;
   height: 80%; }
 
@@ -55,22 +56,71 @@ table {
   box-sizing: inherit; }
 
 body {
-  box-sizing: border-box;
-  background: url(../images/background.jpg) no-repeat fixed;
-  background-size: cover; }
+  font-family: 'Source Sans Pro';
+  box-sizing: border-box; }
 
 a {
   color: black;
   text-decoration: none; }
 
+.card .card-overlay-1, .card .card-overlay-2, .card .card-overlay-3, .card .card-overlay-4, .card .card-overlay-5, .card .card-overlay-6, .card .card-overlay-7, .card .card-overlay-8, .card .card-overlay-9 {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
+  letter-spacing: 3px;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: 0.5s; }
+
+.card:hover .card-overlay, .card:hover .card-overlay-1, .card:hover .card-overlay-2, .card:hover .card-overlay-3, .card:hover .card-overlay-4, .card:hover .card-overlay-5, .card:hover .card-overlay-6, .card:hover .card-overlay-7, .card:hover .card-overlay-8, .card:hover .card-overlay-9 {
+  width: 90%;
+  height: 90%;
+  background-color: rgba(0, 0, 0, 0.3); }
+
+.navbar {
+  position: relative;
+  z-index: 200; }
+  .navbar-navigation {
+    display: flex; }
+    .navbar-navigation-right {
+      width: 50vw;
+      height: 100vh;
+      background-color: #1f1d1d;
+      position: fixed;
+      right: -50vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: right 0.8s cubic-bezier(1, 0, 0, 1); }
+
 .header {
   width: 100%;
-  height: 60vh;
+  margin-top: 100px;
+  margin-left: 45px;
+  margin-bottom: 100px;
   position: relative;
-  background-size: cover; }
-  .header .inner {
-    display: flex;
-    align-items: center; }
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px; }
+  .header img {
+    height: 149px; }
+  .header .inner .darkgrey {
+    color: darkgrey; }
+  .header .inner .yellow {
+    color: yellow; }
+  .header .inner .lightgray {
+    color: lightgray; }
+  .header .inner a {
+    letter-spacing: 5px;
+    font-weight: bold; }
+
+.wrapper {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between; }
 
 .conferences {
   padding: 50px;
@@ -78,25 +128,31 @@ a {
   font-weight: bold;
   text-transform: uppercase; }
 
-.main h2 {
-  font-weight: bold;
-  line-height: 4;
-  text-align: justify;
-  text-transform: uppercase;
-  letter-spacing: 4px; }
+.main {
+  margin-left: 45px; }
+  .main h2 {
+    font-weight: bold;
+    line-height: 4;
+    text-align: justify;
+    text-transform: uppercase;
+    letter-spacing: 4px; }
+  .main p {
+    line-height: 1.3;
+    text-align: justify;
+    font-weight: lighter; }
+  .main br {
+    line-height: 2; }
 
-.main p {
-  line-height: 1.8;
-  text-align: justify;
-  font-weight: lighter; }
-
-.gallery .cards-wrap {
-  display: flex;
-  flex-wrap: wrap;
-  align-content: center; }
+.gallery {
+  margin-left: 45px; }
+  .gallery .cards-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center; }
 
 .footer {
-  padding: 40px 0;
+  width: 100%;
+  padding: 40px;
   background-color: rgba(88, 88, 88, 0.3); }
   .footer input[type=text] {
     appearance: none;
@@ -124,6 +180,7 @@ a {
     color: #585858;
     font-weight: bold; }
     .footer .inner .copyright {
+      margin-top: 30px;
       text-transform: capitalize; }
   .footer .social-media {
     position: absolute;
@@ -142,14 +199,6 @@ a {
         color: pink;
         border: pink solid; }
 
-.logo {
-  width: 100%;
-  height: 60px; }
-
-.symbol {
-  width: 60px;
-  height: 60vh; }
-
 button {
   padding: 15px;
   background-color: #585858;
@@ -159,7 +208,13 @@ button {
   font-weight: bold;
   transition: 0.3s; }
   button:hover {
-    background-color: #f285a1; }
+    background-color: #f285a1;
+    color: white; }
+
+.get-your-tickets {
+  background-color: transparent;
+  color: #585858;
+  text-transform: uppercase; }
 
 .card {
   width: 50%;
@@ -167,12 +222,12 @@ button {
   position: relative;
   display: flex;
   text-align: center; }
-  .card:hover .card-overlay {
-    width: 90%;
-    height: 90%;
-    background-color: rgba(0, 0, 0, 0.3); }
   .card:hover .overlay-link {
-    opacity: 100; }
+    opacity: 100;
+    font-size: 15px;
+    margin-top: 10px;
+    letter-spacing: 1px;
+    font-weight: normal; }
   .card .overlay-link {
     opacity: 0;
     color: white; }
@@ -180,15 +235,23 @@ button {
     object-fit: cover;
     border-radius: 5px;
     transition: 0.5s; }
-  .card .card-overlay {
-    position: absolute;
-    top: 0;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    background-color: rgba(255, 99, 71, 0.3);
-    color: #fff;
-    border-radius: 5px;
-    transition: 0.5s; }
-    .card .card-overlay .card-overlay-head {
-      font-size: 20px; }
+  .card .card-overlay-1 {
+    background-color: rgba(255, 192, 203, 0.7); }
+  .card .card-overlay-2 {
+    background-color: rgba(49, 148, 230, 0.7); }
+  .card .card-overlay-3 {
+    background-color: rgba(54, 173, 94, 0.7); }
+  .card .card-overlay-4 {
+    background-color: rgba(204, 35, 167, 0.7); }
+  .card .card-overlay-5 {
+    background-color: rgba(134, 76, 209, 0.7); }
+  .card .card-overlay-6 {
+    background-color: rgba(49, 148, 230, 0.7); }
+  .card .card-overlay-7 {
+    background-color: rgba(233, 104, 164, 0.7); }
+  .card .card-overlay-8 {
+    background-color: rgba(83, 137, 236, 0.7); }
+  .card .card-overlay-9 {
+    background-color: rgba(42, 184, 141, 0.7); }
+  .card .card-overlay .card-overlay-head {
+    font-size: 20px; }

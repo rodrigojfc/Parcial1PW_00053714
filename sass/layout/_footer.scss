@@ -1,5 +1,6 @@
 .footer{
-    padding: 40px 0;
+    width: 100%;
+    padding: 40px ;
     background-color: rgba($color: #585858, $alpha: 0.3);
     
 
@@ -42,6 +43,7 @@
         font-weight: bold;
 
         .copyright{
+            margin-top: 30px;
             text-transform: capitalize;
         }
         

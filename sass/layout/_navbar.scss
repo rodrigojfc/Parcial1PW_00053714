@@ -1,0 +1,19 @@
+.navbar {
+    position: relative;
+    z-index: 200;
+    &-navigation{
+        display: flex;
+        &-right {
+            width: 50vw;
+            height: 100vh;
+            background-color: #1f1d1d;
+            position: fixed;
+            right: -50vw;
+            @include flexLayout;
+            transition: right 0.8s cubic-bezier(1, 0, 0, 1);
+      
+            
+    }
+  
+}
+}

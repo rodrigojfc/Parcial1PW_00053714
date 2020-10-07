@@ -10,8 +10,15 @@
         transition: 0.3s;
 
         &:hover{
-            background-color: #f285a1 ;
-    
+            background-color: #f285a1;
+            color: white;
         }
         
     }
+
+    .get-your-tickets{
+            background-color: transparent;
+            color:  #585858;
+            text-transform: uppercase;
+            
+        }
