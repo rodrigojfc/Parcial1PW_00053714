@@ -9,3 +9,27 @@
         align-items: center;
     }
 }
+
+.conferences{
+    padding: 50px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.main{
+    h2{
+        font-weight: bold;
+        line-height: 4;
+        text-align: justify;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+    }
+
+    p{
+        line-height: 1.8;
+        text-align: justify;
+        font-weight: lighter;
+
+    }
+}

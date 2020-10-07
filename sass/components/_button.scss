@@ -1,0 +1,17 @@
+
+    button{
+        padding: 15px;
+        background-color: #585858 ;
+        border-radius: 5px;
+        letter-spacing: 2px;
+        color:white;
+        font-weight: bold;
+
+        transition: 0.3s;
+
+        &:hover{
+            background-color: #f285a1 ;
+    
+        }
+        
+    }
